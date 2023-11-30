@@ -1,7 +1,7 @@
-Cancer_image_similarity
+Image Similarity of Brain Tumors
 ==============================
 
-an app that supports clinicians performing image based diagnosis
+An app that supports clinicians performing image-based diagnosis of brain tumors. 
 
 Project Organization
 ------------
@@ -54,4 +54,3 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
