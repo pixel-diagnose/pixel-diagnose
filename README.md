@@ -1,7 +1,48 @@
-Image Similarity of Brain Tumors
-==============================
+# Pixel Diagnose
 
-An app that supports clinicians performing image-based diagnosis of brain tumors. 
+Welcome to **Pixel Diagnose**! 🧠 Our mission is to empower radiologists with cutting-edge AI to enhance the accuracy of differential diagnoses for cancer patients. This repository contains our flagship program, **Pixel Diagnose**, designed to streamline the diagnostic process using advanced image recognition technology.
+
+## Quick Start
+Get started with our Docker image:
+```bash
+docker pull mkstatistics/pixel-diagnose-demo
+docker run -d -p 5001:5001 mkstatistics/pixel-diagnose-demo
+
+
+## How It Works
+Pixel Diagnose is a clinician's digital assistant. It allows radiologists to upload MRI images and receive a set of differential diagnosis options. Our tool leverages various MRI modalities, such as T1, T1 with contrast, T2, and Flair, to provide comprehensive insights.
+
+🧠 Features:
+- **Query Image Input**: Upload an MRI image and receive similar images from our database.
+- **Segmentation Options**: Choose from whole brain or tumor-segmented images.
+- **Multiple MRI Modalities**: Work with different MRI modalities for nuanced diagnosis.
+
+## Technology
+Under the hood, Pixel Diagnose uses a pretrained Resnet50 architecture for generating picture embeddings. This approach ensures high accuracy and speed in identifying similar images for a given query.
+
+## Current Scope
+Our current proof of concept supports differential diagnosis for three brain tumor types: glioma, meningioma, and metastasis.
+
+## Developer Resources
+In the `notebook` folder, you'll find Jupyter notebooks that demonstrate:
+- Visualization techniques.
+- Brain image segmentation methods.
+- Steps for finetuning additional models.
+
+## Contributing
+We're a startup passionate about open-source collaboration. If you're interested in contributing to Pixel Diagnose, whether it's through code, ideas, or feedback, we'd love to hear from you!
+
+## License
+Pixel Diagnose is open-sourced under the [MIT License](LICENSE.md).
+
+## Support
+For support, please open an issue or contact us at [support@pixeldiagnose.com](mailto:support@pixeldiagnose.com).
+
+---
+
+Empowering Radiologists, One Pixel at a Time. 🧠💡
+
+---
 
 Project Organization
 ------------
