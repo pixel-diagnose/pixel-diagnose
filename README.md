@@ -7,7 +7,7 @@ Get started with our Docker image:
 ```bash
 docker pull mkstatistics/pixel-diagnose-demo
 docker run -d -p 5001:5001 mkstatistics/pixel-diagnose-demo
-
+```
 
 ## How It Works
 Pixel Diagnose is a clinician's digital assistant. It allows radiologists to upload MRI images and receive a set of differential diagnosis options. Our tool leverages various MRI modalities, such as T1, T1 with contrast, T2, and Flair, to provide comprehensive insights.
