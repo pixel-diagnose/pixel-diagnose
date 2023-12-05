@@ -9,8 +9,9 @@ docker pull mkstatistics/pixel-diagnose-demo
 docker run -d -p 5001:5001 mkstatistics/pixel-diagnose-demo
 ```
 
+
 ## How It Works
-Pixel Diagnose is a clinician's digital assistant. It allows radiologists to upload MRI images and receive a set of differential diagnosis options. Our tool leverages various MRI modalities, such as T1, T1 with contrast, T2, and Flair, to provide comprehensive insights.
+Pixel Diagnose is a clinician's digital assistant, leveraging a sophisticated architecture to enhance diagnostic accuracy. The process involves embedding query images, retrieving similar images from our database, and employing cosine similarity for precise matching.
 
 🧠 Features:
 - **Query Image Input**: Upload an MRI image and receive similar images from our database.
@@ -18,29 +19,42 @@ Pixel Diagnose is a clinician's digital assistant. It allows radiologists to upl
 - **Multiple MRI Modalities**: Work with different MRI modalities for nuanced diagnosis.
 
 ## Technology
-Under the hood, Pixel Diagnose uses a pretrained Resnet50 architecture for generating picture embeddings. This approach ensures high accuracy and speed in identifying similar images for a given query.
+We employ a range of models to ensure the highest accuracy:
+- Imagenet-pretrained CNN (RESNet50/RESNet152)
+- Finetuned EfficientNetV2
+- MedClip (RESNet50 and Swin Transformer)
+- Custom CNN with Triplet Loss
+
+Our current model has undergone extensive evaluation, including expert ratings and internal assessments, to ensure reliability and accuracy.
 
 ## Current Scope
 Our current proof of concept supports differential diagnosis for three brain tumor types: glioma, meningioma, and metastasis.
 
 ## Developer Resources
-In the `notebook` folder, you'll find Jupyter notebooks that demonstrate:
+Explore our `notebook` folder for:
 - Visualization techniques.
 - Brain image segmentation methods.
 - Steps for finetuning additional models.
 
 ## Contributing
-We're a startup passionate about open-source collaboration. If you're interested in contributing to Pixel Diagnose, whether it's through code, ideas, or feedback, we'd love to hear from you!
+Join us in our mission to transform radiology diagnostics! We welcome contributions in code, ideas, or feedback.
+
+## Contact
+Connect with our team:
+- [Michael Gerloff](https://www.linkedin.com/in/michael-gerloff/)
+- [Svenja Niehaus](https://www.linkedin.com/in/svenja-niehus/)
+- [Dr. Katja Dittrich](https://www.linkedin.com/in/katja-dittrich/)
 
 ## License
 Pixel Diagnose is open-sourced under the [MIT License](LICENSE.md).
 
 ## Support
-For support, please open an issue or contact us at [support@pixeldiagnose.com](mailto:support@pixeldiagnose.com).
+For support, please open an issue or contact us at [pixeldiagnose@gmail.com](mailto:pixeldiagnose@gmail.com).
 
 ---
 
 Empowering Radiologists, One Pixel at a Time. 🧠💡
+
 
 ---
 
