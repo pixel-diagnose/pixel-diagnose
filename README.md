@@ -25,7 +25,7 @@ We employ a range of models to ensure the highest accuracy:
 - MedClip (RESNet50 and Swin Transformer)
 - Custom CNN with Triplet Loss
 
-Our current model has undergone extensive evaluation, including expert ratings and internal assessments, to ensure reliability and accuracy.
+Currently our models are undergoing extensive evaluation, including expert ratings and internal assessments, to ensure reliability and accuracy.
 
 ## Current Scope
 Our current proof of concept supports differential diagnosis for three brain tumor types: glioma, meningioma, and metastasis.
