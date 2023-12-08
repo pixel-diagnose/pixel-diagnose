@@ -6,5 +6,5 @@ setup(
     version='0.1.0',
     description='an app that supports clinicians performing image based diagnosis',
     author='Pixel_Diagnosis',
-    license='MIT',
+    license='AfferoGPLv3',
 )
