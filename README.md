@@ -47,7 +47,7 @@ Connect with our team:
 - [Antonio Rueda-Toicen](https://www.linkedin.com/in/antonioruedatoicen/)
 
 ## License
-Pixel Diagnose is open-sourced under the [MIT License](LICENSE.md).
+Pixel Diagnose is open-sourced under the [GNU Affero GPL v3 License](LICENSE.md).
 
 ## Support
 For support, please open an issue or contact us at [pixeldiagnose@gmail.com](mailto:pixeldiagnose@gmail.com).
